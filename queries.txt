@@ -1,0 +1,98 @@
+flag_display = {
+    "property_address":"What is the address of property in PLANNING CERTIFICATE, answer to the point, answer simply address.",
+    "lep_area":"What is the Local Government Area according to TITLE SEARCH, answer simply just Local Government Area",
+    "cont_zone":"""Check the section of the file with anything regarding "Zoning" and mark it one of the following options:  
+        1. Pass: if Zone RU5, Zone R1, Zone R2 or Zone R3.
+        2. Fail: if not Zone RU5, Zone R1, Zone R2 or Zone R3.
+       Answer simply just pass or fail with zone""",
+    "cont_heritage":"""Check the document for any information regarding "Heritage", once idnetification is complete, mark it as one of the following options: 
+        Fail : if the land is identified as subject to any heritage restrictions. 
+        Pass : if the land is identified as not subject to any heritage restrictions. 
+       Answer simply just Pass or Fail.""",
+    "title_restriction":"""Check the document and identify the relevant Local Government Area to be found on the Title Search and mark as follows:
+        1. Flagged: if there are any:
+            Easements,
+            Covenants,
+            Positive Covenants,
+            Other Restrictions - except do not Flagged "Reservations and Conditions in the Crown Grant" and do not Flagged "Mortgage..."
+        2. Not Flagged: If none of the above Local Government Area's are mentioned or if Reservations and Conditions in the Crown Grant." is the ONLY thing mentioned.
+       Answer simply just Flagged or Not Flagged.""",
+    "bush_fire_prone_land": """Check the section of the file with anything regarding "Bush fire Prone land" and mark it one of the following options: 
+         1. Flagged: if the land is at all bush fire prone.
+         2. Not Flagged: if the land is not bush fire prone.
+        Answer simply just Flagged or Not Flagged.""",
+    "flood_controls": """Check the file for anything regarding flooding or flood controls or flood development controls risk and mark as follows: 
+        1. Pass: If land is not affected by anything regarding flood or flood controls at all. 
+        2. Flagged: If land is affected by anything regarding flood or flood controls or if there is not enough information at all. 
+       Answer simply just flagged or pass.""",
+    "unsewered_land": """Check the document and identify development is on unsewered land: 
+            1. Pass: if it is not. 
+            2. Fail: if it is. 
+        Answer simply just pass or fail.""",
+    "mine_subsidence": """Check the document for any information regarding Mine Subsidence or Mining and provide a mark of:
+            Flagged: If there is any mine or mining subsidence approval required.
+            Not Flagged: If there is no mine or mining subsidence approval required.    
+            Unknown: If there is not enough information or any mention of mine or mining subsidence.
+       Answer simply just Flagged or Not Flagged.""",
+    "skylight_installation":     """Check the document and identify the relevant Local Government Area to be found on the Title Search and mark as follows:
+            1. Flag: If the Local Government Area; Coonamble, Gilgandra, Warrumbungle Shire or Dubbo Regional
+            2. Not Flagged: If none of the above Local Government Area's are mentioned.
+           Answer simply as Flag or Not Flagged""", 
+    "aircraft_noise": """Check the document for any information regarding "ANEF" , "Aerotropolis" or "Aircraft" or "Aircraft Noise" and provide a mark of one of the following options:
+            1. Pass: No restrictions in line with the above terms or no aircraft or not in an ANEF or ANEC contour of 20 or greater
+            2. Fail: If in an ANEF 25+
+            3. Flag: If in an ANEF 20-25
+        Answer simply just Flagged, Pass or Fail.""",
+    "low_rise_housing":"""Check the section of the file with the statement titled the land under Clause 1.17A (1) (c) to (e), (2), (3) and (4) and Clause 1.18 (1)(c3) and Clause 1.19 of State Environmental Planning Policy (Exempt and Complying Development Codes) 2008 and then under the section "Low Rise Housing Code" - and mark it one of the following options:
+        1. Pass: if under this section it stipulates that a complying development "may be carried out" with no further conditions.
+        2. Fail: if under this section it stipulates that a complying development "may not be carried out" with no further conditions.
+        3. Flagged: if under this section it stipulates "may not be carried out on the part of the land affected by" or "No, to the extent that the land is affected by" OR if it seems that there are further conditions beyond pass or fail rules mentioned in point 1 or 2.
+       Answer simply just Pass,Fail or Flagged.""",
+    "land_dedication": """Check the document for information regarding Land reserved for Acquisition or the acquisition of land, once identified mark as the following:
+        1.Flagged: If the land is reserved for acquisition or if there are provisions that reserve the land for acquisition OR if there is not enough information to make a judgement such as when the statement claims this is unknown or not known.
+        2.Not Flagged: If the land is  NOT affected by any provisions related to the acquisition if the land is reserved for acquisition.
+       Answer simply just Flagged or Not Flagged.""",
+    "road_widening": """Check the document for any mention of road widening or road alignment, with a focus on the planning certificate or sections that provide definitive information. Once the information is identified, respond as follows:
+            Flagged: If the planning certificate or any other definitive section states that the land is affected by road widening or road alignment, or if there is conflicting or unclear information.
+            Not Flagged: If the planning certificate or another definitive section explicitly states that the land is not affected by road widening or road alignment.
+          Answer simply as Flagged or Not Flagged""",
+    "unauthorized_works": """Check the document and identify any information in regards to Affected Building Notices and Building product rectification orders, once information is identified:
+            1.Flag: If the land is affected by any affected building notices or building product rectification orders OR if there is not enough information to make a judgement such as when the statement claims this is unknown or not known.
+            2.Not Flagged: If the land is NOT affected by any affected building notices or building product  rectification orders.
+          Answer simply just Flagged or Not flagged.""",
+    "landslide_risk":""" Check the file for anything regarding landslide or landslip risk and mark as follows:
+        1. Pass: If land is not affected by Lasndslide or Landslip
+        2. Fail: If land is affected by Landslide or Landslip
+       Answer simply just Pass or Fail.""",
+    "land_reserved":"""Check the document for information regarding Land reserved for Acquisition or the acquisition of land, once identified mark as the following:
+        Flagged: If the land is reserved for acquisition or if there are provisions that reserve the land for acquisition OR if there is not enough information to make a judgement such as when the statement claims this is unknown or not known.
+        Not Flagged: If the land is  NOT affected by any provisions related to the acquisition if the land is reserved for acquisition.
+       Answer simply just flagged or not flagged.""",   
+    "permissibility":"""Identify the sections within the zoning document that contain the titles:
+        "Objective of Zone"
+        "Permitted with Consent"
+        "Prohibited"
+        "Permitted without Consent"
+        Check for the exact terms (without substitutions or implied meanings): "Dual Occupancies" or
+        "Dual Occupancies (attached)" in either "Permitted with Consent" or "Prohibited".
+        Output Criteria:
+        If the exact term "Dual Occupancies" or "Dual Occupancies (attached)" appears under
+        Permitted with Consent, mark the output as: Pass.
+        If the exact term "Dual Occupancies" or "Dual Occupancies (attached)" appears under
+        Prohibited, mark the output as: Fail.
+        Alternative Condition: If neither of the exact terms is found in either section, proceed to search
+        for the exact term: "Residential accommodation".
+        If the exact term "Residential accommodation" is found under Permitted with Consent, mark the
+        output as: Pass.
+        If the exact term "Residential accommodation" is found under Prohibited, mark the output as:
+        Fail.
+        Final Fallback:
+        If none of these exact terms are present, check for any blanket statements under the Prohibited
+        or Permitted with Consent sections:
+        If Prohibited contains a statement like "any development not specified in item 2 or 3," mark the
+        output as Fail.
+        If Permitted with Consent contains a statement like "any development not specified in item 2 or
+        4," mark the output as Pass.
+       Answer simply just Pass or Fail."""
+}
+
